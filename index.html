@@ -60,6 +60,9 @@
                 <div ng-show="rateLimitError">
                     Rate limit reached. You are making too many requests.
                 </div>
+                <div>
+                    <input type="button" class="btn btn-info" id="load-more" ng-click="refreshHashTag(tweets[tweets.length-1].id)" ng-show="connectedTwitter" value="Load More" />
+                </div>
             </div>
         </div>
     </div>

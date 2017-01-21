@@ -28,9 +28,12 @@ angular.module('twitterApp.services', []).factory('twitterService', function($q)
             OAuth.clearCache('twitter');
             authorizationResult = false;
         },
-        getHashTagSearch: function(search) {
+        getHashTagSearch: function(search, maxID) {
             var deferred = $q.defer();
             var url = "/1.1/search/tweets.json?q=" + encodeURIComponent(search);
+            if (maxID) {
+              url += '&max_id=' + maxID;
+            }
             var promise = authorizationResult.get(url).done(function(data) {
                 deferred.resolve(data);
             }).fail(function(err) {

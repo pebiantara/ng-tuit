@@ -3,11 +3,11 @@ app.controller('TwitterController', function($scope, $q, twitterService) {
     $scope.searchTerm = "#ratuvienny400show";
     twitterService.initialize();
 
-    $scope.refreshHashTag = function() {
+    $scope.refreshHashTag = function(maxID) {
         if ($scope.searchTerm === '')
             return;
-        
-        twitterService.getHashTagSearch($scope.searchTerm).then(function(data) {
+
+        twitterService.getHashTagSearch($scope.searchTerm, maxID).then(function(data) {
             $scope.tweets = $scope.tweets.concat(data.statuses);
             $scope.rateLimitError = false;
         }, function() {
