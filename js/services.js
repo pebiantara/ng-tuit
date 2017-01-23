@@ -1,10 +1,9 @@
 angular.module('twitterApp.services', []).factory('twitterService', function($q) {
 
     var authorizationResult = false;
-
     return {
-        initialize: function() {
-            OAuth.initialize('26EfY6aIJ7KOamwK-iiy2uSoQUI', {
+        initialize: function(oauthKey) {
+            OAuth.initialize(oauthKey, {
                 cache: true
             })
             authorizationResult = OAuth.create("twitter");

@@ -1,0 +1,17 @@
+{
+  "name": "TuitSearch",
+  "version": "1.0.0",
+  "main": "index.html",
+  "keywords": [],
+  "description": "Get twitter service using oauth.io",
+  "author": "pebiantara",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pebiantara/ng-tuit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pebiantara/ng-tuit"
+  },
+  "homepage": "https://github.com/ashleygwilliams/my_package"
+}

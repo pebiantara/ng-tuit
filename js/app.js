@@ -1,1 +1,1 @@
-var app = angular.module('twitterApp', ['ngSanitize','twitterApp.services']);
+var app = angular.module('twitterApp', ['ngSanitize', 'ng-tuit']);

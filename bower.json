@@ -1,0 +1,18 @@
+{
+  "name": "TuitSearch",
+  "description": "Get twitter service using oauth.io",
+  "main": "index.html",
+  "authors": [
+    "pebiantara"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/pebiantara/ng-tuit",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

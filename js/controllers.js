@@ -1,7 +1,7 @@
 app.controller('TwitterController', function($scope, $q, twitterService) {
     $scope.tweets = []; //array of tweets
-    $scope.searchTerm = "#ratuvienny400show";
-    twitterService.initialize();
+    $scope.searchTerm = $scope.hashtagDefault;
+    twitterService.initialize($scope.oauthPublicKey);
 
     $scope.refreshHashTag = function(maxID) {
         if ($scope.searchTerm === '')
